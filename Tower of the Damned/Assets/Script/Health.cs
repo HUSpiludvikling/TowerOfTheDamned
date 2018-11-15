@@ -18,6 +18,7 @@ public class Health : MonoBehaviour {
 		
 	}
 
+
     internal void DealDamage(int damage)
     {
         currentHealth = currentHealth - damage;
