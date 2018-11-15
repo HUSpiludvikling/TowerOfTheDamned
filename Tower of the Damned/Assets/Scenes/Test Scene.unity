@@ -269,7 +269,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4547772971867684, guid: 9b8a08fcb17ae7d47b91f80528ddd94b, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.57
       objectReference: {fileID: 0}
     - target: {fileID: 4547772971867684, guid: 9b8a08fcb17ae7d47b91f80528ddd94b, type: 2}
       propertyPath: m_LocalPosition.z
@@ -298,3 +298,20 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b8a08fcb17ae7d47b91f80528ddd94b, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1715167084 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1834410984513318, guid: 9b8a08fcb17ae7d47b91f80528ddd94b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1715167083}
+--- !u!114 &1715167085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1715167084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22a7b8d7eb4fa114ebdf328e5fcd6163, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 100
