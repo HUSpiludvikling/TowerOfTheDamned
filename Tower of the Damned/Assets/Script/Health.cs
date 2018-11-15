@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -16,4 +17,9 @@ public class Health : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    internal void DealDamage(int damage)
+    {
+        currentHealth = currentHealth - damage;
+    }
 }
