@@ -3,11 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FiringManagement : MonoBehaviour {
+public class FireingManagement : MonoBehaviour {
     public GameObject Arrow;
     public string Firekey = "Fire1";
 
-    [Range(1f,10f)]
+    [Range(1f,50f)]
     public float ForceMod = 5f;
 	// Use this for initialization
 	void Start () {
