@@ -52,4 +52,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Zombie: {fileID: 1465092478767620, guid: 6472e14888815c840b86cbad2c9e3776, type: 2}
-  Delay: 5
+  Delay: 10

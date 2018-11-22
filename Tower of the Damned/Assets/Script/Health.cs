@@ -5,14 +5,18 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
-public class Health : MonoBehaviour {
+public class Health : MonoBehaviour, IBarRepresentable {
     public UnityEvent DeathEvent;
     //Værdier og referencer
     [SerializeField]
     private int currentHealth = 100;
 
-	// Use this for initialization
-	void Awake () {
+    public int currentHP { get; set; }
+
+    public int MaxHP { get; set; }
+
+    // Use this for initialization
+    void Awake () {
         DeathEvent = new UnityEvent();
 	}
 	
