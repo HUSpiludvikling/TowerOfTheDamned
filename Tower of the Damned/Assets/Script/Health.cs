@@ -12,13 +12,13 @@ public class Health : MonoBehaviour {
     private int currentHealth = 100;
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
         DeathEvent = new UnityEvent();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+        
 	}
 
 
@@ -27,6 +27,7 @@ public class Health : MonoBehaviour {
         currentHealth = currentHealth - damage;
         if (currentHealth <= 0)
         {
+            //Send døds signal
             DeathEvent.Invoke();
         }
     }
