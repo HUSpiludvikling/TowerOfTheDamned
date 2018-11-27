@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public interface IBarRepresentable
 {
     int currentHP { get; set; }
     int MaxHP { get; set; }
+    UnityEvent TakeDamageEvent { get; set; }
 }
 
 
@@ -30,6 +32,11 @@ public class HealthBar : MonoBehaviour {
 	void Start () {
         Barscript = healthScript.GetComponent<IBarRepresentable>();
 
+        if(Barscript == null)
+        {
+            GetComponentInParent<IBarRepresentable>();
+        }
+
         img = GetComponent<Image>();
         originalImageSizeDeltaX = img.rectTransform.sizeDelta.x;
 
@@ -38,12 +45,8 @@ public class HealthBar : MonoBehaviour {
 
         currentHealth = Barscript.currentHP;
         maximumHealth = Barscript.MaxHP;
-    }
-	
-	// Update is called once per frame
-	void Update ()
-    {
-        
+
+        Barscript.TakeDamageEvent.AddListener(UpdateHealthBarRepresentation);
 
     }
 
