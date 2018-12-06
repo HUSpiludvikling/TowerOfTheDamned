@@ -1,31 +1,40 @@
 fileFormatVersion: 2
-guid: bdf730c2333ef8f4a9ff84e5221f4d1b
+guid: 5a007975b4ff8cc40af1cc79b748a76b
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: Cone
     100002: Cone_001
-    100004: Cylinder
-    100006: //RootNode
+    100004: Cone_002
+    100006: Cone_003
+    100008: Cylinder
+    100010: //RootNode
     400000: Cone
     400002: Cone_001
-    400004: Cylinder
-    400006: //RootNode
+    400004: Cone_002
+    400006: Cone_003
+    400008: Cylinder
+    400010: //RootNode
     2100000: Material_001
-    2100002: Material_002
-    2100004: Material_003
+    2100002: Material_003
+    2100004: Material_002
     2300000: Cone
     2300002: Cone_001
-    2300004: Cylinder
+    2300004: Cone_002
+    2300006: Cone_003
+    2300008: Cylinder
     3300000: Cone
     3300002: Cone_001
-    3300004: Cylinder
-    4300000: Cone
-    4300002: Cylinder
-    4300004: Cone_001
+    3300004: Cone_002
+    3300006: Cone_003
+    3300008: Cylinder
+    4300000: Cone_003
+    4300002: Cone_002
+    4300004: Cone
+    4300006: Cylinder
+    4300008: Cone_001
     7400000: Default Take
     9500000: //RootNode
-    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
