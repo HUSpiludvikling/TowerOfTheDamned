@@ -179,7 +179,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1001 &1226755109
+--- !u!1001 &816283340
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -188,15 +188,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4507824905581642, guid: bfdfd50ce96e9e842958449df784254b, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.872
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4507824905581642, guid: bfdfd50ce96e9e842958449df784254b, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.228
+      value: 0.918
       objectReference: {fileID: 0}
     - target: {fileID: 4507824905581642, guid: bfdfd50ce96e9e842958449df784254b, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -3.17
+      value: -1.256
       objectReference: {fileID: 0}
     - target: {fileID: 4507824905581642, guid: bfdfd50ce96e9e842958449df784254b, type: 2}
       propertyPath: m_LocalRotation.x
@@ -292,7 +292,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Arrow: {fileID: 1554350252380766, guid: bfdfd50ce96e9e842958449df784254b, type: 2}
   Firekey: Fire1
-  ForceMod: 10
+  ForceMod: 35
 --- !u!81 &1292171702
 AudioListener:
   m_ObjectHideFlags: 0
