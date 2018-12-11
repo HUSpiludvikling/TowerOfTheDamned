@@ -22,6 +22,8 @@ GameObject:
   - component: {fileID: 33346390439077716}
   - component: {fileID: 23507213653951754}
   - component: {fileID: 65865406947812004}
+  - component: {fileID: 114250669686184516}
+  - component: {fileID: 114236418105247018}
   m_Layer: 0
   m_Name: Tower
   m_TagString: Tower
@@ -96,3 +98,32 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114236418105247018
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1834410984513318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0fef534ee6fa9f42880755d447a4a11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneName: Lose Scene
+--- !u!114 &114250669686184516
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1834410984513318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22a7b8d7eb4fa114ebdf328e5fcd6163, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeathEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  currentHealth: 100
