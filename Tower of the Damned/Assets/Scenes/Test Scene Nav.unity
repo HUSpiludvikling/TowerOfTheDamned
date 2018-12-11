@@ -372,7 +372,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Arrow: {fileID: 1554350252380766, guid: bfdfd50ce96e9e842958449df784254b, type: 2}
   Firekey: Fire1
-  ForceMod: 10
+  ForceMod: 35
 --- !u!1 &1608944694
 GameObject:
   m_ObjectHideFlags: 0
