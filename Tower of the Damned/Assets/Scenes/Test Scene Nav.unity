@@ -383,7 +383,7 @@ GameObject:
   - component: {fileID: 1295333544}
   - component: {fileID: 1295333543}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Timecontroller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -401,9 +401,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sun: {fileID: 447672924}
-  SecondsInFullDay: 20
+  SecondsInFullDay: 120
   CurrentTimeOfDay: 0
-  nightScale: 0.1
+  nightScale: 2
 --- !u!4 &1295333544
 Transform:
   m_ObjectHideFlags: 0
@@ -411,7 +411,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1295333542}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 143.61429, y: -43.52556, z: -31.452991}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -582,7 +582,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1608944694}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -4}
+  m_LocalPosition: {x: 0, y: 3.31, z: -8.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 836822059}
@@ -627,6 +627,18 @@ Prefab:
     - target: {fileID: 4547772971867684, guid: 9b8a08fcb17ae7d47b91f80528ddd94b, type: 2}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4547772971867684, guid: 9b8a08fcb17ae7d47b91f80528ddd94b, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4547772971867684, guid: 9b8a08fcb17ae7d47b91f80528ddd94b, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4547772971867684, guid: 9b8a08fcb17ae7d47b91f80528ddd94b, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b8a08fcb17ae7d47b91f80528ddd94b, type: 2}
