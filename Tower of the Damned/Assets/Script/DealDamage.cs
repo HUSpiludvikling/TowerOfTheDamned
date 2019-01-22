@@ -8,7 +8,7 @@ public class DealDamage : MonoBehaviour {
     private int Damage = 10;
 
     [SerializeField]
-    private string damageTag = "Tower";
+    private string[] damageTags;
 
 	// Use this for initialization
 	void Start () {
@@ -22,14 +22,18 @@ public class DealDamage : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.transform.CompareTag(damageTag))
+        for (int i = 0; i < damageTags.Length; i++)
         {
-            collision.transform.GetComponent<Health>().DealDamage(Damage);
-        }
-        else
-        {
+            if (collision.transform.CompareTag(damageTags[i]))
+            {
+                collision.transform.GetComponent<Health>().DealDamage(Damage);
+            }
+            else
+            {
 
+            }
         }
+        
     }
 
     

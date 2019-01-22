@@ -552,7 +552,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
-  damageTag: Zombie
+  damageTags:
+  - Zombie
 --- !u!136 &136739126977240824
 CapsuleCollider:
   m_ObjectHideFlags: 1
