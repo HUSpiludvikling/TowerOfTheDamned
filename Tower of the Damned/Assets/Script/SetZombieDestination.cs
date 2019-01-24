@@ -23,14 +23,16 @@ public class SetZombieDestination : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        
         if (Vector3.Distance(transform.position, PlayerTrans.position) <= MinDistanceToPlayer)
         {
             Agent.SetDestination(PlayerTrans.position);
-
         }
         else
         {
             Agent.SetDestination(Destination);
+            
+
         }
-	}
+    }
 }

@@ -35,6 +35,9 @@ public class DealDamage : MonoBehaviour {
         }
         
     }
-
+    public void SetDamage(int NewDamage)
+    {
+        Damage = NewDamage;
+    }
     
 }
