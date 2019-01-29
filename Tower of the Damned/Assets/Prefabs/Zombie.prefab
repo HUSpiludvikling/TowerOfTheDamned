@@ -1263,7 +1263,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
-  damageTags: []
+  damageTags:
+  - Player
+  - Tower
 --- !u!114 &114622885697505716
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -28,8 +28,11 @@ public class ShopActivator : MonoBehaviour {
         if (other.CompareTag("Shop"))
         {
             shopPanel.SetStateRecursive(true);
-            MouseX = mouseSetings.XSensitivity;
-            MouseY = mouseSetings.YSensitivity;
+            if (mouseSetings.XSensitivity != 0 && mouseSetings.YSensitivity != 0)
+            {
+                MouseX = mouseSetings.XSensitivity;
+                MouseY = mouseSetings.YSensitivity;
+            }
             mouseSetings.XSensitivity = 0;
             mouseSetings.YSensitivity = 0;
             mouseSetings.SetCursorLock(false);
@@ -43,8 +46,13 @@ public class ShopActivator : MonoBehaviour {
             shopPanel.SetStateRecursive(false);
             mouseSetings.SetCursorLock(true);
             fireingManagement.InShop = false;
-            mouseSetings.XSensitivity = MouseX;
-            mouseSetings.YSensitivity = MouseY;
+
+            if (MouseX != 0 && MouseY != 0)
+            {
+                mouseSetings.XSensitivity = MouseX;
+                mouseSetings.YSensitivity = MouseY;
+            }
+            
         }
     }
 }

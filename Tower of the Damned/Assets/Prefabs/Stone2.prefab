@@ -36,6 +36,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4418145504349830}
+  - component: {fileID: 114482397639881024}
+  - component: {fileID: 65733572126806738}
+  - component: {fileID: 54830389138919578}
   m_Layer: 0
   m_Name: Stone2
   m_TagString: Untagged
@@ -97,7 +100,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1857135550282666}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.814594, y: 4.267399, z: 19.226822}
+  m_LocalPosition: {x: 6.6882935, y: 0.97, z: -37.950256}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4339185639640548}
@@ -258,3 +261,43 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1881279837382358}
   m_Mesh: {fileID: 4300004, guid: e2554a680e86ac14e8b1b501e9139fb6, type: 3}
+--- !u!54 &54830389138919578
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1857135550282666}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &65733572126806738
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1857135550282666}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 0.7, z: 2.3}
+  m_Center: {x: 0, y: 0.4, z: -0.3}
+--- !u!114 &114482397639881024
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1857135550282666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3142d1d75ae38448f164f494db1a68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 1
+  amount: 20
