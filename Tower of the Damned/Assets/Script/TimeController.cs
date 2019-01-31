@@ -8,7 +8,7 @@ public class TimeController : MonoBehaviour{
     [SerializeField] float SecondsInFullDay = 120f;
 
     [Range(0, 1)]
-    [SerializeField] private float CurrentTimeOfDay = 0;
+    public float CurrentTimeOfDay = 0;
 
     private float TimeMultiplier = 0.1f;
     private float SunInitalIntensity;

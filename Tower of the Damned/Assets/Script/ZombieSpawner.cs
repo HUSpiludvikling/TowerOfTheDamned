@@ -9,9 +9,12 @@ public class ZombieSpawner : MonoBehaviour {
     [SerializeField]
     [Range(2.1f,10.0f)]
     private float Delay = 5.0f;
-	// Use this for initialization
+
+    public TimeController timeController;
+
 	void Start () {
         StartCoroutine(SpawnZombie(Delay));
+
 	}
 
     /// <summary>
@@ -22,7 +25,7 @@ public class ZombieSpawner : MonoBehaviour {
     IEnumerator SpawnZombie(float delay)
     {
         // the starting point
-        while(true)
+        while(timeController.CurrentTimeOfDay <= 0.23f || timeController.CurrentTimeOfDay >= 0.76f)
         {
             // Tells the program to wait for delay -/+2 seconds
             yield return new WaitForSeconds(delay + Random.Range(-2.0f, 2.0f));
