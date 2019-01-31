@@ -15,8 +15,6 @@ public class Health : MonoBehaviour, IBarRepresentable {
 
     public int MaxHP { get; set; }
 
-    private List<int> AdditionalHealth;
-
     private UnityEvent takeDamageEvent;
     public UnityEvent TakeDamageEvent
     {
@@ -39,8 +37,7 @@ public class Health : MonoBehaviour, IBarRepresentable {
         MaxHP = currentHealth;
         DeathEvent = new UnityEvent();
         TakeDamageEvent = new UnityEvent();
-
-        AdditionalHealth = new List<int>();
+        
     }
 	
 
@@ -56,13 +53,5 @@ public class Health : MonoBehaviour, IBarRepresentable {
             //Send døds signal
             DeathEvent.Invoke();
         }
-    }
-    public void UpgateHealth(int amount)
-    {
-        AdditionalHealth.Add(amount);
-        MaxHP += amount;
-        currentHealth += amount;
-        currentHP += amount;
-        TakeDamageEvent.Invoke();
     }
 }
