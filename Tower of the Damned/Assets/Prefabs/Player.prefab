@@ -150,6 +150,10 @@ GameObject:
   - component: {fileID: 114441308251712746}
   - component: {fileID: 114286485490019716}
   - component: {fileID: 114991871498483968}
+  - component: {fileID: 114854755249084500}
+  - component: {fileID: 114328658100406344}
+  - component: {fileID: 114314657078331220}
+  - component: {fileID: 114724669351171066}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -602,6 +606,35 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: +5 Damage  50 Lumber
+--- !u!114 &114314657078331220
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1498212226048410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79bdbd5d48ade4348a87dc0bbfc4fdfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shopPanel: {fileID: 0}
+--- !u!114 &114328658100406344
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1498212226048410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22a7b8d7eb4fa114ebdf328e5fcd6163, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeathEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  currentHealth: 100
 --- !u!114 &114338761824338232
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -831,6 +864,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &114724669351171066
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1498212226048410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03ab719705e85e948bd386709bcbc2bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textFedback: {fileID: 0}
 --- !u!114 &114752707666565678
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -943,13 +988,26 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114854755249084500
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1498212226048410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c602a73b185617e40a09831596c232fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Lumber: 100
+  Stone: 0
 --- !u!114 &114922954908208538
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1318704261859990}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -975,7 +1033,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: Shop
 --- !u!114 &114976398005807838
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -53,6 +53,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4495393690349330}
+  - component: {fileID: 65163352022383912}
   m_Layer: 0
   m_Name: Woodlille
   m_TagString: Untagged
@@ -157,8 +158,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1486393791871764}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.679199, y: 6.45, z: 19.64}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -2.6997833, y: 1.4, z: -43.410248}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
   - {fileID: 4989376074271634}
   - {fileID: 4044094083015274}
@@ -409,3 +410,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1575706056654082}
   m_Mesh: {fileID: 4300002, guid: 1d105e847fc4ce04fa4a565049e708c4, type: 3}
+--- !u!65 &65163352022383912
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1486393791871764}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6, y: 3.5, z: 6}
+  m_Center: {x: 0, y: 1.7, z: 0}
