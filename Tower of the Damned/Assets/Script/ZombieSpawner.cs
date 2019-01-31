@@ -8,6 +8,10 @@ public class ZombieSpawner : MonoBehaviour {
 
     [SerializeField]
     [Range(2.1f,10.0f)]
+    private float Area = 5.0f;
+
+    [SerializeField]
+    [Range(2.1f,10.0f)]
     private float Delay = 5.0f;
 
     public TimeController timeController;
@@ -30,7 +34,7 @@ public class ZombieSpawner : MonoBehaviour {
             // Tells the program to wait for delay -/+2 seconds
             yield return new WaitForSeconds(delay + Random.Range(-2.0f, 2.0f));
             // Tells the program where to spawn the zombies
-            Instantiate(Zombie, transform.position, Quaternion.identity );
+            Instantiate(Zombie, transform.position+(Random.insideUnitSphere*Area), Quaternion.identity );
         }
     }
 }
