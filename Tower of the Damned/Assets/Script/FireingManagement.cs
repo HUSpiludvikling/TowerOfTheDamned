@@ -30,6 +30,7 @@ public class FireingManagement : MonoBehaviour {
 
     private void Fire()
     {
+        SoundEvents.Fire.Invoke();
         GameObject TempArrow;
         TempArrow = Instantiate(Arrow, transform.position + transform.forward, transform.rotation * Arrow.transform.rotation);
         TempArrow.GetComponent<Rigidbody>().AddForce(transform.forward * ForceMod, ForceMode.Impulse);
