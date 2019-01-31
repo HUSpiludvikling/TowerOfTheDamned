@@ -6,8 +6,6 @@ public enum EventEnum
     {
         Fire,
         Move,
-        Damage,
-        Miss,
         ItemPickUp,
         ClickButton
     }
@@ -27,11 +25,7 @@ public class PlayOnEvent : MonoBehaviour {
             case EventEnum.Fire:
                 SoundEvents.Fire.AddListener(EventPlayer); break;
             case EventEnum.Move:
-                SoundEvents.Move.AddListener(EventPlayer); break;
-            case EventEnum.Damage:
-                SoundEvents.Damage.AddListener(EventPlayer); break;
-            case EventEnum.Miss:
-                SoundEvents.Miss.AddListener(EventPlayer); break;
+                SoundEvents.Move.AddListener(EventPlayer); break
             case EventEnum.ItemPickUp:
                 SoundEvents.ItemPickUp.AddListener(EventPlayer); break;
             case EventEnum.ClickButton:
