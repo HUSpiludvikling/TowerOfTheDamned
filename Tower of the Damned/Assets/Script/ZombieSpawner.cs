@@ -29,12 +29,21 @@ public class ZombieSpawner : MonoBehaviour {
     IEnumerator SpawnZombie(float delay)
     {
         // the starting point
-        while(timeController.CurrentTimeOfDay <= 0.23f || timeController.CurrentTimeOfDay >= 0.76f)
+        while(true)
         {
-            // Tells the program to wait for delay -/+2 seconds
-            yield return new WaitForSeconds(delay + Random.Range(-2.0f, 2.0f));
-            // Tells the program where to spawn the zombies
-            Instantiate(Zombie, transform.position+(Random.insideUnitSphere*Area), Quaternion.identity );
+            if (timeController.CurrentTimeOfDay <= 0.23f || timeController.CurrentTimeOfDay >= 0.76f)
+            {
+                // Tells the program to wait for delay -/+2 seconds
+                yield return new WaitForSeconds(delay + Random.Range(-2.0f, 2.0f));
+                // Tells the program where to spawn the zombies
+                Instantiate(Zombie, transform.position+(Random.insideUnitSphere*Area), Quaternion.identity );
+            }
+            else
+            {
+                yield return new WaitForSeconds(delay);
+            }
+
+            
         }
     }
 }
