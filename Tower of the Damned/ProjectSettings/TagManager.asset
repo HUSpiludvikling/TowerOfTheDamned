@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Tower
   - Zombie
+  - Shop
+  - Stone
+  - Lumber
+  - TimeController
+  - SoundManagement
   layers:
   - Default
   - TransparentFX

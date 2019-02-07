@@ -25,7 +25,7 @@ public class PlayOnEvent : MonoBehaviour {
             case EventEnum.Fire:
                 SoundEvents.Fire.AddListener(EventPlayer); break;
             case EventEnum.Move:
-                SoundEvents.Move.AddListener(EventPlayer); break
+                SoundEvents.Move.AddListener(EventPlayer); break;
             case EventEnum.ItemPickUp:
                 SoundEvents.ItemPickUp.AddListener(EventPlayer); break;
             case EventEnum.ClickButton:
