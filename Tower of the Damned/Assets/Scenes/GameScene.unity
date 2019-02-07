@@ -724,7 +724,7 @@ GameObject:
   - component: {fileID: 821478759}
   - component: {fileID: 821478758}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Shop
   m_TagString: Shop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1667,7 +1667,8 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114109241853395446, guid: 9b8a08fcb17ae7d47b91f80528ddd94b, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 9b8a08fcb17ae7d47b91f80528ddd94b, type: 2}
   m_IsPrefabAsset: 0
 --- !u!114 &1715167085 stripped
