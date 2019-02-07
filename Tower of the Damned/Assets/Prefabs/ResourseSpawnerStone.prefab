@@ -51,6 +51,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40843cb88f25d364792b12d25c235c52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Resourse: {fileID: 1857135550282666, guid: 8f0455419bbd2f740897505074d514bd, type: 2}
+  Resourses:
+  - {fileID: 1486393791871764, guid: d358bba787f71124e9276af74a996a3b, type: 2}
+  - {fileID: 1857135550282666, guid: 8f0455419bbd2f740897505074d514bd, type: 2}
+  resource: 0
+  MaxLumber: 10
+  MaxStone: 0
   Area: 5
   Delay: 6

@@ -7,6 +7,10 @@ public class ZombieSpawner : MonoBehaviour {
     private GameObject Zombie;
 
     [SerializeField]
+    [Range(2.1f, 10.0f)]
+    private float Area = 5.0f;
+
+    [SerializeField]
     [Range(2.1f,30.0f)]
     private float Delay = 5.0f;
 
