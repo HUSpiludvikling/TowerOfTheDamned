@@ -880,7 +880,22 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4350465489240610, guid: 026c5d780fc462949b4e82c099b6ad58, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114305832807397274, guid: 026c5d780fc462949b4e82c099b6ad58,
+        type: 2}
+      propertyPath: sun
+      value: 
+      objectReference: {fileID: 447672924}
+    - target: {fileID: 114305832807397274, guid: 026c5d780fc462949b4e82c099b6ad58,
+        type: 2}
+      propertyPath: SecondsInFullDay
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 114305832807397274, guid: 026c5d780fc462949b4e82c099b6ad58,
+        type: 2}
+      propertyPath: CurrentTimeOfDay
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 026c5d780fc462949b4e82c099b6ad58, type: 2}
