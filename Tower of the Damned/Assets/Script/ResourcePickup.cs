@@ -25,11 +25,13 @@ public class ResourcePickup : MonoBehaviour
             if (type == ResourceType.Lumber)
             {
                 collision.gameObject.GetComponent<ResourceCollection>().AddLumber(amount);
+                ResourceSpawner.Lumber--;
                 Destroy(gameObject);
             }
             else if (type == ResourceType.Stone)
             {
                 collision.gameObject.GetComponent<ResourceCollection>().AddStone(amount);
+                ResourceSpawner.Stone--;
                 Destroy(gameObject);
             }
         }
